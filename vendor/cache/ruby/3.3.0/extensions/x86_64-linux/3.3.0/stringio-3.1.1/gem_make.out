@@ -1,0 +1,18 @@
+current directory: /desafio/vendor/cache/ruby/3.3.0/gems/stringio-3.1.1/ext/stringio
+/usr/local/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /desafio/vendor/cache/ruby/3.3.0/gems/stringio-3.1.1/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20240908-756-iuak24 sitelibdir\=./.gem.20240908-756-iuak24 clean
+
+current directory: /desafio/vendor/cache/ruby/3.3.0/gems/stringio-3.1.1/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20240908-756-iuak24 sitelibdir\=./.gem.20240908-756-iuak24
+compiling stringio.c
+linking shared-object stringio.so
+
+current directory: /desafio/vendor/cache/ruby/3.3.0/gems/stringio-3.1.1/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20240908-756-iuak24 sitelibdir\=./.gem.20240908-756-iuak24 install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20240908-756-iuak24
+
+current directory: /desafio/vendor/cache/ruby/3.3.0/gems/stringio-3.1.1/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20240908-756-iuak24 sitelibdir\=./.gem.20240908-756-iuak24 clean

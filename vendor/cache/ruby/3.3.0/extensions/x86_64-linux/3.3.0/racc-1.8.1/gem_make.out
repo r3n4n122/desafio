@@ -1,0 +1,18 @@
+current directory: /desafio/vendor/cache/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+/usr/local/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /desafio/vendor/cache/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240908-756-3z8y6u sitelibdir\=./.gem.20240908-756-3z8y6u clean
+
+current directory: /desafio/vendor/cache/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240908-756-3z8y6u sitelibdir\=./.gem.20240908-756-3z8y6u
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /desafio/vendor/cache/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240908-756-3z8y6u sitelibdir\=./.gem.20240908-756-3z8y6u install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20240908-756-3z8y6u/racc
+
+current directory: /desafio/vendor/cache/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240908-756-3z8y6u sitelibdir\=./.gem.20240908-756-3z8y6u clean
