@@ -8,7 +8,7 @@ class CreateMunicipe < ActiveRecord::Migration[7.0]
       t.string :uf
       t.datetime :date_of_birthday
       t.string :cellphone
-      t.integer :status
+      t.integer :status, default: 1
       t.timestamps
     end
 
@@ -27,6 +27,7 @@ class CreateMunicipe < ActiveRecord::Migration[7.0]
       t.string :street
       t.string :complement
       t.string :neighborhood
+      t.string :number
       t.references :city
       t.references :state
       t.references :municipe

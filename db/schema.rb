@@ -18,6 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_09_08_190941) do
     t.string "street"
     t.string "complement"
     t.string "neighborhood"
+    t.string "number"
     t.bigint "city_id"
     t.bigint "state_id"
     t.bigint "municipe_id"
@@ -42,7 +43,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_09_08_190941) do
     t.string "uf"
     t.datetime "date_of_birthday"
     t.string "cellphone"
-    t.integer "status"
+    t.integer "status", default: 1
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
