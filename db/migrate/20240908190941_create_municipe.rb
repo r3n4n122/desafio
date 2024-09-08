@@ -5,9 +5,21 @@ class CreateMunicipe < ActiveRecord::Migration[7.0]
       t.string :cpf
       t.string :cns
       t.string :email
+      t.string :uf
       t.datetime :date_of_birthday
       t.string :cellphone
       t.integer :status
+      t.timestamps
+    end
+
+    create_table :states do |t|
+      t.string :abbreviation
+      t.string :name
+      t.timestamps
+    end
+
+    create_table :cities do |t|
+      t.string :name
       t.timestamps
     end
 
@@ -15,8 +27,10 @@ class CreateMunicipe < ActiveRecord::Migration[7.0]
       t.string :street
       t.string :complement
       t.string :neighborhood
-      t.string :city
-      t.string :uf
+      t.references :city
+      t.references :state
+      t.references :municipe
+      t.timestamps
     end
   end
 end
