@@ -5,6 +5,8 @@ ruby "3.3.5"
 
 gem "rails", "~> 7.0.8", ">= 7.0.8.4"
 
+gem 'enumerize'
+
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 
 gem "pg", "~> 1.1"

@@ -18,8 +18,21 @@ ActiveRecord::Schema[7.0].define(version: 2024_09_08_190941) do
     t.string "street"
     t.string "complement"
     t.string "neighborhood"
-    t.string "city"
-    t.string "uf"
+    t.string "number"
+    t.bigint "city_id"
+    t.bigint "state_id"
+    t.bigint "municipe_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["city_id"], name: "index_addresses_on_city_id"
+    t.index ["municipe_id"], name: "index_addresses_on_municipe_id"
+    t.index ["state_id"], name: "index_addresses_on_state_id"
+  end
+
+  create_table "cities", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "municipes", force: :cascade do |t|
@@ -27,9 +40,17 @@ ActiveRecord::Schema[7.0].define(version: 2024_09_08_190941) do
     t.string "cpf"
     t.string "cns"
     t.string "email"
+    t.string "uf"
     t.datetime "date_of_birthday"
     t.string "cellphone"
-    t.integer "status"
+    t.integer "status", default: 1
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "states", force: :cascade do |t|
+    t.string "abbreviation"
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
