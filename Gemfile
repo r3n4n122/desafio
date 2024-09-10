@@ -5,7 +5,9 @@ ruby "3.3.5"
 
 gem "rails", "~> 7.0.8", ">= 7.0.8.4"
 
-gem 'enumerize'
+gem "enumerize", "~> 2.8.1"
+
+gem "cpf_cnpj"
 
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 
